@@ -19,5 +19,5 @@ NVIDIA GPU + CUDA
 
 ## How to Train
 * File 'gen_label_csv.py': get the label file of data. You should change the data path.
-* File  'main_dif_rain.py': main file for training 
+* File  'main_dif_rain.py': main file for training    
 Open the 'main_dif_rain.py', you can change the hype-parameters in the file.
