@@ -1,8 +1,6 @@
 # -*- coding: utf-8 -*-
 '''
-Created on Thu Sep 20 16:16:39 2018
- 
-@ author: herbert-chen
+@ Thanks for herbert-chen providing the code
 '''
 import os
 import time
@@ -361,13 +359,13 @@ def main():
             print("=> no checkpoint found at '{}'".format(resume))
 
     # 读取训练图片列表
-    all_data = pd.read_csv('data/realrainlabel5000.csv')
+    all_data = pd.read_csv('data/rainDIDlabel.csv')
     # 分离训练集和测试集，stratify参数用于分层抽样
     train_data_list, val_data_list = train_test_split(all_data, test_size=val_ratio, random_state=666, stratify=all_data['label'])
     # 不分离计算结果
     # train_data_list = all_data
     # 读取测试图片列表
-    test_data_list = pd.read_csv('data/raintest.csv')
+    test_data_list = pd.read_csv('data/rainlabel.csv')
 
     # 图片归一化，由于采用ImageNet预训练网络，因此这里直接采用ImageNet网络的参数
     normalize = transforms.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
