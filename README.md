@@ -12,10 +12,10 @@ NVIDIA GPU + CUDA
 .  
 |-- data  
 `-- |-- train  
-&nbsp;&nbsp;|&nbsp;&nbsp;|-- rain  
-&nbsp;&nbsp;|&nbsp;&nbsp;|-- norain  
-&nbsp;&nbsp;|-- test  
-&nbsp;&nbsp;|&nbsp;&nbsp;|-- ...  
+&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;|-- rain  
+&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;|-- norain  
+&nbsp;&nbsp;&nbsp;&nbsp;|-- test  
+&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;|-- ...  
 
 ## How to Train
 * File 'gen_label_csv.py': get the label file of data. You should change the data path.
