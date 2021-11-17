@@ -4,8 +4,8 @@ We aim to train a network for rain/clear image classifition.
 The network is constructed based on the inceptionnet v4. 
 
 ## Implementation
-python3 
-pytorch >= 1.2
+python3  
+pytorch >= 1.2  
 NVIDIA GPU + CUDA
 
 ## Data
