@@ -29,4 +29,4 @@ for first_path in os.listdir(data_path):
 label_file = pd.DataFrame({'img_path': img_path, 'label': label})
 label_file['label'] = label_file['label'].map(label_warp)
 
-label_file.to_csv('data/rainDIDlabel.csv', index=False)
+label_file.to_csv('data/rainlabel.csv', index=False)
